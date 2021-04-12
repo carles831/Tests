@@ -10,13 +10,13 @@ var checkUser = function(){
     alert("Rellena el formulario");
   }else{
 
-    var basePrice = parseFloat(fieldBasePrice.value).;
+    var basePrice = parseFloat(fieldBasePrice.value);
     var paymentsAmount = parseFloat(fieldPaymentsAmount.value);
     var taxes = parseFloat(fieldTaxes.value);
 
     var monthlyPayment = basePrice/paymentsAmount;
 
-    var result =  (monthlyPayment - ((monthlyPayment*taxes)/100))toFixed(2);
+    var result =  (monthlyPayment - ((monthlyPayment*taxes)/100)).toFixed(2);
 
 
     resultField.innerText="Tu salario neto aproximado es de: " +result +"€";
